@@ -1,0 +1,15 @@
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+[Bb]in/
+[Oo]bj/
+*.exe
+*.lib
+*.dll
+*.pdb
+*.ipch
+*.log
+
+.vs/
