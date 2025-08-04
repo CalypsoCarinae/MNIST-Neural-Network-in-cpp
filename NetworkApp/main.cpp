@@ -1,9 +1,15 @@
 #include <iostream>
+#include <random>
 #include <Network.h>
 
 int main()
 {
-    Network test = Network({784, 20, 20, 10});
+    srand(time(NULL));
+
+    const std::vector<int> MNIST_size = { 784, 128, 64, 10 };
+
+    Network test = Network(MNIST_size);
+
 
     //TODO obviously
 }

@@ -6,7 +6,7 @@
 class Neuron {
 private:
     std::vector<float> weights;
-    float bias = 0;
+    float bias = 0.0;
 public:
     Neuron() {};
 
@@ -19,10 +19,19 @@ public:
     ~Neuron() {}
 
     double sigmoid(double sum) {
-        return 1.0 / (1.0 + std::exp(sum));
+        return 1.0 / (1.0 + std::exp(-sum));
     }
 
-    double sum(std::vector<float> input) {
+    double sigmoid_derivative(double sum) {
+        return sigmoid(sum) * (1.0 - sigmoid(sum));
+    }
+
+    double sum(const std::vector<float>& input) {
+        if (input.size() != weights.size()) {
+            // Replace with an exception
+            std::cerr << "Neuron Summing Exception: Dimensions don't match.\n\n";
+        }
+
         double result = 0.0;
         for (int i = 0; i < weights.size(); i++) result += input[i] * weights[i];
         result += bias;
