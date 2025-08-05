@@ -1,1 +1,48 @@
-﻿
+﻿  Network.cpp
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Neuron.h(19,94): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Neuron.h(19,94): warning C4244:         with
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Neuron.h(19,94): warning C4244:         [
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Neuron.h(19,94): warning C4244:             _Ty=float
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Neuron.h(19,94): warning C4244:         ]
+  (compiling source file '/Network.cpp')
+  
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Neuron.h(20,50): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '/Network.cpp')
+  
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Network.cpp(16,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '/Network.cpp')
+  
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Network.cpp(23,66): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Network.cpp(23,66): warning C4244:         with
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Network.cpp(23,66): warning C4244:         [
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Network.cpp(23,66): warning C4244:             _Ty=float
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Network.cpp(23,66): warning C4244:         ]
+  (compiling source file '/Network.cpp')
+  
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Network.cpp(30,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '/Network.cpp')
+  
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Network.cpp(49,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '/Network.cpp')
+  
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Network.cpp(51,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '/Network.cpp')
+  
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Network.cpp(66,34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '/Network.cpp')
+  
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Network.cpp(67,29): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '/Network.cpp')
+  
+  Neuron.cpp
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Neuron.cpp(32,75): warning C4244: '+=': conversion from 'double' to '_Ty', possible loss of data
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Neuron.cpp(32,75): warning C4244:         with
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Neuron.cpp(32,75): warning C4244:         [
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Neuron.cpp(32,75): warning C4244:             _Ty=float
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Neuron.cpp(32,75): warning C4244:         ]
+  (compiling source file '/Neuron.cpp')
+  
+C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\Network\Neuron.cpp(33,20): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '/Neuron.cpp')
+  
+  Network.vcxproj -> C:\Users\48888\Desktop\UJ\ProjektMNIST\NeuralNetwork\x64\Release\Network.lib

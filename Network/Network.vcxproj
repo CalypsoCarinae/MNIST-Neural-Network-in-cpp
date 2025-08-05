@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="DataConverter.h" />
+    <ClInclude Include="FileReader.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Network.h" />
     <ClInclude Include="Neuron.h" />
@@ -148,8 +148,8 @@
     <ClInclude Include="Utilities.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DataConverter.cpp" />
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="FileReader.cpp" />
     <ClCompile Include="Network.cpp" />
     <ClCompile Include="Neuron.cpp" />
     <ClCompile Include="pch.cpp">

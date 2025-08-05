@@ -10,9 +10,16 @@ private:
 
     float last_output = 0.0;
 public:
-    Neuron();
-    Neuron(int connections);
-    ~Neuron();
+    Neuron() {}
+
+    ~Neuron() {}
+
+    Neuron(int connections) {
+        weights.resize(connections);
+        for (int i = 0; i < connections; i++) weights[i] = ((double)rand() / RAND_MAX) * 2.0 - 1.0;
+        bias = ((double)rand() / RAND_MAX) * 2.0 - 1.0;
+    }
+
     double sigmoid(double sum);
     double sigmoid_derivative(double sum);
     double sum(const std::vector<float>& input);
