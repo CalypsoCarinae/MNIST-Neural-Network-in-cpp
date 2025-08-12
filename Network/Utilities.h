@@ -4,6 +4,8 @@
 
 using t_floatmatrix = std::vector<std::vector<float>>;
 
-bool isConstShape(const t_floatmatrix& input);
+bool is_const_shape(const t_floatmatrix& input);
 void normalize(std::vector<float>& input);
 int read_int32(std::ifstream& stream);
+void print_image(const t_floatmatrix& imgs, const size_t& amnt);
+bool are_same_size(t_floatmatrix m1, t_floatmatrix m2);

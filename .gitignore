@@ -2,6 +2,8 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.idx1-ubyte
+*.idx3-ubyte
 
 [Bb]in/
 [Oo]bj/

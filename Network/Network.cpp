@@ -58,9 +58,8 @@ public:
 
             for (int i = 0; i < delta[l].size(); i++) {
                 float sum = 0.0;
-                for (int j = 0; j < network[l + 1].size(); j++) {
+                for (int j = 0; j < network[l + 1].size(); j++)
                     sum += network[l + 1][j].getWeights()[i] * delta[l + 1][j];
-                }
 
                 float neuron_sum = network[l][i].sum(neuron_impulses[l]);
                 float Delta = sum * network[l][i].sigmoid_derivative(neuron_sum);
@@ -76,7 +75,7 @@ public:
     }
 
     void training(t_floatmatrix& input_data, const std::vector<int>& label_data, int epoch, float lr = 0.1) {
-        if (!isConstShape(input_data) || input_data[0].size() != 784 || input_data.size() != label_data.size()) {
+        if (!is_const_shape(input_data) || input_data[0].size() != 784 || input_data.size() != label_data.size()) {
             // Replace with an actual exception
             std::cerr << "Network Training Error: Invalid Input Data/Label Data.\n\n";
         }
@@ -94,5 +93,9 @@ public:
                 backward_propagation(neuron_impulses, label, lr);
             }
         }
+    }
+
+    bool save_to_file() {
+        //TODO
     }
 };

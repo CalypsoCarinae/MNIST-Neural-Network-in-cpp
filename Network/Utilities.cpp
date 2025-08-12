@@ -5,7 +5,7 @@
 
 using t_floatmatrix = std::vector<std::vector<float>>;
 
-bool isConstShape(const t_floatmatrix& input) {
+bool is_const_shape(const t_floatmatrix& input) {
     size_t size = input[0].size();
     for (int i = 0; i < input.size(); i++)
         if (size != input[i].size()) return false;
@@ -24,4 +24,21 @@ int read_int32(std::ifstream& stream) {
     stream.read((char*)bytes, 4);
     int result = int(bytes[0]) << 24 | int(bytes[1]) << 16 | int(bytes[2]) << 8 | int(bytes[3]);
     return result;
+}
+
+void print_image(const t_floatmatrix& imgs, const size_t& amnt) {
+    for (int i = 0; i < amnt; i++) {
+        std::cout << "(";
+        for (int j = 0; j < imgs[i].size(); j++) {
+            std::cout << imgs[i][j] << ", ";
+            if (j % 28 == 0 && j != 0) std::cout << "\n";
+        }
+        std::cout << ")\n\n";
+    }
+}
+
+bool are_same_size(t_floatmatrix m1, t_floatmatrix m2) {
+    if (m1.size() != m2.size()) return false;
+    for (int i = 0; i < m1.size(); i++) if (m1[i].size() != m2[i].size()) return false;
+    return true;
 }
