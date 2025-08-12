@@ -12,6 +12,15 @@ private:
     t_network network;
 
 public:
+    int predict(const std::vector<float>& image) {
+        if (image.size() != 784) {
+            //Marking for future change
+            std::cerr << "Image Size Error: Not 28x28.\n\n";
+        }
+
+        //TODO
+    }
+
     t_floatmatrix forward_propagation(const std::vector<float>& input) {
         int layer_count = network.size();
         t_floatmatrix neuron_impulses(layer_count + 1);
@@ -96,6 +105,8 @@ public:
     }
 
     bool save_to_file() {
+        t_floatmatrix weights;
+
         //TODO
     }
 };

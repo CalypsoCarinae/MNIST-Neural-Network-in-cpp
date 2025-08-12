@@ -7,6 +7,8 @@
 
 using t_floatmatrix = std::vector<std::vector<float>>;
 
+//temporary, to check whether files are being read correctly
+
 void tempFileTest() {
     size_t size = 5;
     t_floatmatrix training_images;
