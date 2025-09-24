@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -140,7 +140,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="FileReader.h" />
+    <ClInclude Include="DatasetReader.h" />
+    <ClInclude Include="FileSaveRead.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Network.h" />
     <ClInclude Include="Neuron.h" />
@@ -149,7 +150,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="FileReader.cpp" />
+    <ClCompile Include="DatasetReader.cpp" />
+    <ClCompile Include="FileSaveRead.cpp" />
     <ClCompile Include="Network.cpp" />
     <ClCompile Include="Neuron.cpp" />
     <ClCompile Include="pch.cpp">

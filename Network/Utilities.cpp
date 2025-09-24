@@ -42,3 +42,10 @@ bool are_same_size(t_floatmatrix m1, t_floatmatrix m2) {
     for (int i = 0; i < m1.size(); i++) if (m1[i].size() != m2[i].size()) return false;
     return true;
 }
+
+int maxID(const std::vector<float>& input) {
+    int ID = 0;
+    for (int i = 1; i < input.size(); i++) if (input[i] > input[ID]) ID = i;
+
+    return ID;
+}
