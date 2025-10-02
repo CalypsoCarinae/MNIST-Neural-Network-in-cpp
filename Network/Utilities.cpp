@@ -12,13 +12,6 @@ bool is_const_shape(const t_floatmatrix& input) {
     return true;
 }
 
-void normalize(std::vector<float>& input) {
-    float max = input[0];
-    for (int i = 1; i < input.size(); i++)
-        max = input[i] > max ? input[i] : max;
-    for (float el : input) el /= max;
-}
-
 int read_int32(std::ifstream& stream) {
     unsigned char bytes[4];
     stream.read((char*)bytes, 4);

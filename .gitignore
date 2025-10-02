@@ -2,6 +2,8 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.sln
+*.slnLaunch.user
 *.idx1-ubyte
 *.idx3-ubyte
 

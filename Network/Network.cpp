@@ -99,9 +99,10 @@ void Network::training(t_floatmatrix& input_data, const std::vector<int>& label_
         std::cerr << "Network Training Error: Invalid Input Data/Label Data.\n\n";
     }
 
-    for (auto& in : input_data) {
-        normalize(in);
-    }
+    for (auto& vec : input_data)
+        for (auto& val : vec)
+            val /= 255.0f;
+
 
     for (int e = 0; e < epoch; e++) {
         for (int s = 0; s < input_data.size(); s++) {
