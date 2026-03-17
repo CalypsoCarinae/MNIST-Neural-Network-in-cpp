@@ -6,6 +6,8 @@
 *.slnLaunch.user
 *.idx1-ubyte
 *.idx3-ubyte
+*.vcxproj
+*.vcxproj.*
 
 [Bb]in/
 [Oo]bj/
